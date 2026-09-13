@@ -26,6 +26,12 @@ public class Punto_9 {
         System.out.println("\nIngrese un numero para buscar en eñ arreglo: ");
         numero = scanner.nextInt();
 
+        for (int i = 0; i < arreglo.length; i++){
+            if (arreglo[i] == numero){
+                contador++;
+            }
+        }
+
         
         
 
