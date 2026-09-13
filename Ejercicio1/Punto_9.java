@@ -1,5 +1,3 @@
-package Ejercicio1;
-
 import java.util.Scanner;
 
 public class Punto_9 {
@@ -7,6 +5,20 @@ public class Punto_9 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+
+        int[] arreglo = new int [10];
+        int numero;
+        int contador = 0;
+
+        System.out.println("ingrese los elementos del arreglo: ");
+
+        for (int i = 0; i < arreglo.lenght; i++) {
+            System.out.println("arreglo[" + i + "] = ");
+            arreglo[i] = scanner.nextInt();
+        }
+
+
+
         
         
 
