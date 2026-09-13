@@ -1,22 +1,27 @@
 package Clase2;
 
-public class Matriz {
-    public static void main(String[] args) {
-        
-        //Declaracion de la matriz (forma 1)
-        int[][] m = {{5, 8, 6},
-                    {1, 3, 2},
-                     {4, 9, 7}     };
+public static void main(String[] args) {
 
-        //Recorrido de la matriz
+        // Declaracion de la matriz forma 1
+        int[][] a = { { 5, 8, 6 },
+                { 1, 3, 2 },
+                { 4, 7, 9 } };
 
-        for (int i = 0 ; i < m.length; i++){
-            for (int j = 0 ; j < m[0].length; j++){   
-               System.out.println("m[" + i + "][" + j + "]=" + m[i] [j]);
-            }   
-
-
+        // Recorrido de la matriz
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                System.out.println("a[" + i + "][" + j + "] = " + a[i][j]);
+            }
         }
 
+        // Visualizar de mejor manera la matriz
+        String cad = "";
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                cad += "|" + a[i][j] + "|";
+            }
+            cad += "\n";
+        }
+        System.out.println(cad);
     }
 }
