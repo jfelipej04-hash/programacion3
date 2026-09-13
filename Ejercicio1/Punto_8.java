@@ -27,7 +27,16 @@ public class Punto_8 {
         }
     }
 
-    
+    int repMayor = 0, int repMenor = 0;
+
+    for (int num : numeros){
+        if (num == mayor){
+            repMayor++;
+        }
+        if (num == menor){
+            repMenor++;
+        }
+    }
 
 
 }
