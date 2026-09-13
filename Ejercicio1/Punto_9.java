@@ -23,7 +23,8 @@ public class Punto_9 {
 
             }
 
-            
+        System.out.println("\nIngrese un numero para buscar en eñ arreglo: ");
+        numero = scanner.nextInt();
 
         
         
