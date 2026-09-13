@@ -1,3 +1,5 @@
+package Ejercicio1;
+
 import java.util.Scanner;
 
 public class Punto_9 {
@@ -32,11 +34,7 @@ public class Punto_9 {
             }
         }
 
-        
-        
-
-
-
+        System.out.println("\nEl numero " + numero + " aparece " + contador + " veces en el arreglo ");
 
     }
 
