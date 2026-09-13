@@ -14,6 +14,11 @@ public class Punto_7 {
             contImpares++;
         }
 
+    int[] pares = new int [contPares];
+    int[] impares = new int [contImpares];
+
+    
+
 
     }
     
