@@ -2,7 +2,10 @@ package Ejercicio1;
 
 public class Punto_7 {
 
-    int [] A = {7, 2, 4, 19, 22, 8, 14, 25, 9, 1}
+public static void main(String[] args) {
+    
+
+    int [] A = {7, 2, 4, 19, 22, 8, 14, 25, 9, 1};
 
     int contPares = 0, contImpares = 0;
 
@@ -33,20 +36,18 @@ public class Punto_7 {
 
     System.out.println("Arreglo original:");
     for (int i = 0; i < A.length; i++){
-        System.out.println(A[i] + " ");
+        System.out.println("A[" + i +  "] = " + A[i]);
     }
 
-    System.out.println("Arreglo original:");
+      System.out.println("Arreglo par:");
     for (int i = 0; i < pares.length; i++){
-        System.out.println(pares[i] + " ");
+        System.out.println("pares[" + i +  "] = " + pares[i]);
     }
 
-    System.out.println("Arreglo original:");
+      System.out.println("Arreglo par:");
     for (int i = 0; i < impares.length; i++){
-        System.out.println(impares[i] + " ");
+        System.out.println("impares[" + i +  "] = " + impares[i]);
     }
-
-
 
 
 
