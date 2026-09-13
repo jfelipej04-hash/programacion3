@@ -44,7 +44,7 @@ public static void main(String[] args) {
         System.out.println("pares[" + i +  "] = " + pares[i]);
     }
 
-      System.out.println("Arreglo par:");
+      System.out.println("Arreglo impar:");
     for (int i = 0; i < impares.length; i++){
         System.out.println("impares[" + i +  "] = " + impares[i]);
     }
