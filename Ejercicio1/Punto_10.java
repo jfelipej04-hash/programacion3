@@ -4,14 +4,17 @@ public class Punto_10 {
 
     public static void main(String[] args) {
         
-        int[] A = {7, 3, 6, 9, 1, 5, 4};
+        int[] A = {7, 3, 6, 9, 1, 5, 4, 6};
         int[] B = new int[4];
 
         for(int i = 0; i < B.length; i++) {
             B[i] = A[i] + A[A.length -1 - i];
         }        
 
-
+        System.out.println("\nArreglo resultante B: ");
+        for (int i = 0; i < B.length; i++) {
+        System.out.println("B[" + i + "] = " + B[i]);
+        }
 
     }
     
