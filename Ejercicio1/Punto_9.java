@@ -12,12 +12,18 @@ public class Punto_9 {
 
         System.out.println("ingrese los elementos del arreglo: ");
 
-        for (int i = 0; i < arreglo.lenght; i++) {
+        for (int i = 0; i < arreglo.length; i++) {
             System.out.println("arreglo[" + i + "] = ");
             arreglo[i] = scanner.nextInt();
         }
 
+        System.out.println("\nArreglo ingresado : ");
+            for (int i = 0; i < arreglo.length; i++) {
+            System.out.println("arreglo[" + i + "] = " + arreglo[i]);
 
+            }
+
+            
 
         
         
