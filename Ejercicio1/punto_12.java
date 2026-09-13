@@ -13,5 +13,14 @@ public class punto_12 {
             }
         }
 
+        int[] B = new int[contador];
+
+        int j = 0;
+        for (int i = 0; i < A.length; i++) {
+            if (A[i] == x){
+                B[j++] = i + 1;
+            }
+        }
+
     }
 }
