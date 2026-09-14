@@ -34,6 +34,16 @@ public class Punto_13 {
 
         System.out.println("Media = " + media);
 
+         System.out.println("\nMayores que la media:");
+        for (int i = 0; i < Mayores.length; i++) {
+            System.out.println(Mayores[i]);
+        }
+
+         System.out.println("\nMenores que la media:");
+        for (int i = 0; i < Menores.length; i++) {
+            System.out.println(Menores[i]);
+        }
+
 
         
     }
