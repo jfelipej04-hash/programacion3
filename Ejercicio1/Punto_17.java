@@ -13,8 +13,20 @@ public class Punto_17 {
             for(int j = 0; j < columnas; j++){
                 sumaFila += M[i][j];
             }
+        
+            System.out.println("fila " + (i+1) + " : " + sumaFila);
+
         }
 
+        
+        for(int j = 0; j < columnas; j++){
+            int sumaColumna = 0;
+            for(int i = 0; i < filas; i++){
+                sumaColumna += M[i][j];
+            }
+            System.out.println("columna " + (j+1) + " : " + sumaColumna);
+
+        }
 
 
     }
