@@ -33,6 +33,26 @@ public class Punto_22 {
             System.out.println("]");
         }
 
+        int max = matriz [0][0];
+        int min = matriz [0][0];
+        int maxFila = 0, maxCol = 0;
+        int minFila = 0, minCol = 0;
+
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                if(matriz[i][j] > max){
+                    max = matriz[i][j];
+                    maxFila = i;
+                    maxCol = j;
+                }
+                if (matriz[i][j] < min){
+                    min = matriz[i][j];
+                    minFila = i;
+                    minCol = j;
+                }
+            }
+        }
+
         
 
 
