@@ -53,9 +53,10 @@ public class Punto_22 {
             }
         }
 
-        
+        System.out.println("\nMayor elemento: " + max + " en la posicion [" + maxFila + "][" + maxCol + "]");
+         System.out.println("\nMenor elemento: " + min + " en la posicion [" + minFila + "][" + minCol + "]");
 
-
+        sc.close();
     }
     
 }
