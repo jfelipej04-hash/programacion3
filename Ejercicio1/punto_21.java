@@ -17,6 +17,16 @@ public class punto_21 {
             }
         }
 
+        for(int i = 0; i < M; i++){
+            int suma = 0;
+            for (int j = 0; j < M; j++){
+                if(matriz[i][j] % 2 == 0){
+                    suma += matriz[i][j];
+                }
+            }
+            B[i] = suma;
+        }
+
 
 
     }
