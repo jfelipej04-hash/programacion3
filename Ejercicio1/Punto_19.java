@@ -19,6 +19,20 @@ public class Punto_19 {
             }
         }
 
+        for(int i = 0; i < a; i++){
+        System.out.print("[");
+        for(int j = 0; j < b; j++){ 
+         System.out.print(matriz[i][j]);
+        if(j< b-1){
+            System.out.print(", ");
+        }
+    }
+        System.out.println("]");
+
+
+    }
+
+
     }
     
 }
