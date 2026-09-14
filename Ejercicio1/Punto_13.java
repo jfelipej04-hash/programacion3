@@ -11,6 +11,14 @@ public class Punto_13 {
         }
         double media = (double) suma / A.length;
 
+        int mayores = 0, menores = 0;
+        for(int i = 0; i < A.length; i++){
+            if(A[i] > media){
+                mayores++;
+            }else if (A[i] < media){
+                menores++;
+            }
+        }
 
 
 
