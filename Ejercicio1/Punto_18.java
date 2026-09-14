@@ -12,7 +12,15 @@ for(int i = 0; i < 10; i++){
 }
 
 
+System.out.println("tabla de multiplicar del 1 al 10: \n");
+    for(int i = 0; i < 10; i++){
+    for(int j = 0; j < 10; j++) 
+         System.out.printf("%4d", matriz[i][j]);
+    }
+    System.out.println();
+
 
     }
     
-}
+
+    }
