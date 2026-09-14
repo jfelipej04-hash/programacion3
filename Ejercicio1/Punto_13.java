@@ -20,9 +20,19 @@ public class Punto_13 {
             }
         }
 
+        int[] Mayores = new int[mayores];
+        int[] Menores = new int[menores];
 
+        int tmay = 0, tmen = 0;
+        for(int i = 0; i < A.length; i++){
+            if (A[i] > media){
+                Mayores[tmay++] = A[i];
+            }else if (A[i] < media){
+                Menores[tmen++] = A[i];
+            }
+        } 
 
-
+        System.out.println("Media = " + media);
 
 
         
