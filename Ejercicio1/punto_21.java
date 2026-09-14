@@ -27,6 +27,25 @@ public class punto_21 {
             B[i] = suma;
         }
 
+        for(int i = 0; i < M; i++){
+        System.out.print("[");
+        for(int j = 0; j < M; j++){ 
+         System.out.print(matriz[i][j]);
+        if(j< M-1){
+            System.out.print(", ");
+        }
+        }
+        System.out.println("]");
+        }
+        
+        
+        System.out.println("[");
+        for(int i = 0; i < M; i++){
+            System.out.print(B[i]);
+            if(i < M-1)System.out.print(", ");
+        }
+        System.out.print("]");
+
 
 
     }
