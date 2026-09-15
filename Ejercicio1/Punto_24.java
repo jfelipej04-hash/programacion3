@@ -29,6 +29,23 @@ public class Punto_24 {
         }
         double promedio = (double) sumaAnual / 12;
 
+        int mesesSuperior = 0, mesesInferior = 0;
+        for(int i = 0; i < 12; i++){
+            if(totalMes[i] > promedio) mesesSuperior++;
+            else if (totalMes[i] < promedio) mesesInferior++;
+        }
+
+        int max = totalMes[0];
+        int mesMax = 0;
+        for(int i = 1; i < 12; i++){
+            if(totalMes[i] > max){
+                max = totalMes[i;
+                    mesMax = i;
+                ]
+            }
+        }
+
+
 
         
     }
