@@ -45,6 +45,10 @@ public class Punto_24 {
             }
         }
 
+        System.out.println("Promedio anual: " + promedio);
+        System.out.println("Meses con produccion mayor al promedio: " + mesesSuperior);
+        System.out.println("Meses con produccion menor al promedio: " + mesesInferior);
+        System.out.println("Mes con mayor produccion: Mes " + (mesMax+1) + " con " + max + " toneladas");
 
 
         
