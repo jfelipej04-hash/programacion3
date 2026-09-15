@@ -39,9 +39,9 @@ public class Punto_24 {
         int mesMax = 0;
         for(int i = 1; i < 12; i++){
             if(totalMes[i] > max){
-                max = totalMes[i;
+                max = totalMes[i];
                     mesMax = i;
-                ]
+                
             }
         }
 
