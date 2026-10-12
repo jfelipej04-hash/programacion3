@@ -15,5 +15,29 @@ public class EjemploPila {
 
         Stack<String> pasillo = new Stack<>();
 
+        pasillo.push("Moto_1");
+        pasillo.push("Moto_2");
+        pasillo.push("Moto_3");
+
+        System.out.println("Motos en el pasillo : " + pasillo);
+
+        System.out.println(" Cual fue la ultima moto en ingresar? = " + pasillo.peek());
+
+        System.out.println(" Sacar la ultima moto que ingreso al taller =" + pasillo.pop());
+
+        System.out.println(" Cuantas motos quedaron ? = " + pasillo.size());
+
+        System.out.println( " Esta vació el pasillo? = " + pasillo.isEmpty());
+
+        System.out.println( " En que posicion esta la moto 1? = " + pasillo.search("Moto_1"));
+
+        System.out.println(" Existe la moto 2? = " +pasillo.contains("Moto_2"));
+
+        pasillo.clear();
+
+        System.out.println(" El pasillo esta vació? =" + pasillo.isEmpty());
+
+
+
     }
 }
