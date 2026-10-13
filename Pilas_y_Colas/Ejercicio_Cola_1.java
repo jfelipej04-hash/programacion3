@@ -25,7 +25,49 @@ public class Ejercicio_Cola_1 {
         int contadorClientes = 1;
 
         System.out.println(" SUPER MERCADO ");
-        
+
+        do {
+            System.out.println("\n--- MENÚ PRINCIPAL ---");
+            System.out.println("1. nuevo cliente");
+            System.out.println("2. Un cliente paga en una caja");
+            System.out.println("3. Ver estado actual (Carritos y Cajas)");
+            System.out.println("0. Salir");
+            System.out.print("Seleccione una opción: ");
+            opcion = entrada.nextInt();
+            entrada.nextLine();
+
+            switch (opcion) {
+
+                case 1:
+                    String nombreCliente = "Cliente_" + contadorClientes++;
+                    
+                    if (!carritosDisponibles.isEmpty()){
+                        int carritoId = carritosDisponibles.poll();
+                        System.out.println("-> " + nombreCliente + " toma el carrito #" + carritoId);
+                        
+                        int cajaMenosGente = 0;
+                        int minTamano = cajas[0].size();
+                        for (int c = 1; c < 3; c++) {
+                            if (cajas[c].size() < minTamano) {
+                                minTamano = cajas[c].size();
+                                cajaMenosGente = c;
+                            }
+                        }
+
+                        cajas[cajaMenosGente].add(nombreCliente);
+                        System.out.println("-> " + nombreCliente + " se forma en la Caja " + (cajaMenosGente + 1));
+
+                        } else {
+                            clientesEsperandoCarrito.add(nombreCliente);
+                        System.out.println("-> No hay carritos disponibles. " + nombreCliente + " pasa a la lista de espera[cite: 5].");
+                    }
+                    break;
+
+                case 2:
+
+                    }
+
+            }
 
 
 
