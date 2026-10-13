@@ -61,11 +61,46 @@ public class Ejercicio_Cola_1 {
                             clientesEsperandoCarrito.add(nombreCliente);
                         System.out.println("-> No hay carritos disponibles. " + nombreCliente + " pasa a la lista de espera[cite: 5].");
                     }
+                    
                     break;
 
                 case 2:
 
+                System.out.print("¿De qué caja sale el cliente que ya pagó? (1, 2 o 3): ");
+                    int numCaja = entrada.nextInt() - 1;
+
+                    if (numCaja >= 0 && numCaja < 3) {
+                        if (!cajas[numCaja].isEmpty()) {
+                            String clienteSaliendo = cajas[numCaja].poll();
+                            System.out.println("-> " + clienteSaliendo + " pagó en la Caja " + (numCaja + 1) + " y desocupa su carrito[cite: 5].");
+
+                            int carritoDevuelto = 25 - carritosDisponibles.size(); 
+                            carritosDisponibles.add(carritoDevuelto);
+
+                            if (!clientesEsperandoCarrito.isEmpty()) {
+                                String clienteEnEspera = clientesEsperandoCarrito.poll();
+                                int carritoAsignado = carritosDisponibles.poll();
+                                int cajaMenosGente = 0;
+                                int minTamano = cajas[0].size();
+                                for (int c = 1; c < 3; c++) {
+                                    if (cajas[c].size() < minTamano) {
+                                        minTamano = cajas[c].size();
+                                        cajaMenosGente = c;
+                                    }
+                                }
+                                cajas[cajaMenosGente].add(clienteEnEspera);
+                                System.out.println(" Había gente esperando " + clienteEnEspera + " toma el carrito #" + carritoAsignado + " y se forma en la Caja " + (cajaMenosGente + 1));
+                            }
+
+                        } else {
+                            System.out.println("La Caja seleccionada está vacía.");
+                        }
+                    } else {
+                        System.out.println("Número de caja no válido.");
                     }
+                    break;
+
+                    
 
             }
 
