@@ -20,7 +20,7 @@ public class Ejercicio_Pila_1 {
             
             System.out.println("\nEvaluando la cadena: " + cadena);
 
-        }
+        
         
         int separador = cadena.indexOf('&');
 
@@ -30,12 +30,24 @@ public class Ejercicio_Pila_1 {
 
             String x = cadena.substring(0, separador);
             String y = cadena.substring(separador + 1);
+
             Stack<Character> pila = new Stack<>();
 
             for (int i = 0; i < x.length(); i++) {
                     pila.push(x.charAt(i));
                 }
 
-    }   
+            String inversa = "";
+                while (!pila.isEmpty()) {
+                    inversa += pila.pop();
+                }
 
+                boolean resultado = inversa.equals(y);
+                System.out.println("Resultado: " + resultado);
+
+            }        
+    
+        }
+        
+    }   
 }
