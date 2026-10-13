@@ -100,6 +100,29 @@ public class Ejercicio_Cola_1 {
                     }
                     break;
 
+                case 3:
+
+                System.out.println("\n--- ESTADO ACTUAL DEL SUPERMERCADO ---");
+                    System.out.println("Carritos disponibles en la entrada: " + carritosDisponibles.size());
+                    System.out.println("Clientes esperando carrito: " + clientesEsperandoCarrito);
+                    for (int c = 0; c < 3; c++) {
+                        System.out.println("Cola Caja " + (c + 1) + ": " + cajas[c]);
+                    }
+                    break;
+
+                case 0:
+                    System.out.println("¡Saliendo del simulador!");
+                    break;
+
+                default:
+                    System.out.println("Opción no válida.");
+                }
+
+                } while (opcion != 0);
+
+                entrada.close();
+    
+
                     
 
             }
@@ -108,4 +131,4 @@ public class Ejercicio_Cola_1 {
 
     }
 
-}
+
