@@ -4,6 +4,10 @@ import java.util.Stack;
 
 public class Ejercicio_pila_2 {
 
+    public static void main(String[] args) {
+        
+    
+
     String[] expresiones = {
 
         "((a+b)*5) - 7",
@@ -38,5 +42,14 @@ public class Ejercicio_pila_2 {
                     if (actual == '}' && tope != '{') { equilibrado = false; break; }
                 }
             }
-    
+
+            if (!pila.isEmpty()) {
+                equilibrado = false;
+            }
+
+            System.out.println("Resultado (¿Está equilibrado?): " + equilibrado);
+        }
+
+    }
 }
+
