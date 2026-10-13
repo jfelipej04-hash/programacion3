@@ -44,13 +44,18 @@ public class Ejercicio_Pila_5 {
                     }
                 }
 
-                
+                System.out.println("Resultado: ¿Es palíndromo? -> " + esPalindromo + "\n");
+            
+                }
+            } while (!frase.equalsIgnoreCase("salir"));
 
-
-            }
+            System.out.println("¡Programa finalizado!");
+            entrada.close();
+            
+            
 
         }        
 
 
     } 
-}
+
