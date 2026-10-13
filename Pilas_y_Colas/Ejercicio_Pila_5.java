@@ -25,6 +25,27 @@ public class Ejercicio_Pila_5 {
                 Stack<Character> pila = new Stack<>();
                 Queue<Character> listaCircular = new LinkedList<>();
 
+                for (int i = 0; i < frase.length(); i++) {
+                    char c = frase.charAt(i);
+
+                    pila.push(c);
+                    listaCircular.add(c);
+
+                    }
+                    boolean esPalindromo = true;
+
+                 while (!pila.isEmpty()) {
+                    char charPila = pila.pop();
+                    char charLista = listaCircular.poll();
+
+                    if (charPila != charLista) {
+                        esPalindromo = false;
+                        break;
+                    }
+                }
+
+                
+
 
             }
 
