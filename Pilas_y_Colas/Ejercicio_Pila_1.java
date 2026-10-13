@@ -13,6 +13,14 @@ public class Ejercicio_Pila_1 {
 
        };
 
-    }
-    
+       for (int p = 0; p < pruebas.length; p++) {
+            String cadena = pruebas[p];
+            
+            System.out.println("\nEvaluando la cadena: " + cadena);
+
+        }
+ 
+        
+    }   
+
 }
