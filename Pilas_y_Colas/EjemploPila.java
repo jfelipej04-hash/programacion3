@@ -36,6 +36,7 @@ public class EjemploPila {
         pasillo.clear();
 
         System.out.println(" El pasillo esta vació? =" + pasillo.isEmpty());
+        
 
 
 
